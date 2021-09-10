@@ -1,4 +1,4 @@
-![coverage](https://github.com/guidocollino/sample_rails_app/actions/workflows/rspec.yml/coverage.svg?event=push)
+![coverage](https://github.com/guidocollino/sample_rails_app/actions/workflows/TestRspec/coverage.svg?event=push)
 
 # Ruby on Rails Tutorial sample application
 
