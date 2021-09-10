@@ -1,5 +1,5 @@
 ![coverage](https://github.com/guidocollino/sample_rails_app/actions/workflows/TestRspec/coverage.svg?event=push) | 
-[![rubocop](https://github.com/guidocollino/sample_rails_app/actions/workflows/rubocop.yml/badge.svg)](https://github.com/guidocollino/sample_rails_app/actions/workflows/rubocop.yml)
+[![rubocop](https://github.com/guidocollino/sample_rails_app/actions/workflows/rubocop.yml/badge.svg?event=push)](https://github.com/guidocollino/sample_rails_app/actions/workflows/rubocop.yml)
 
 # Ruby on Rails Tutorial sample application
 
