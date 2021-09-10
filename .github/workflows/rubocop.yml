@@ -1,4 +1,4 @@
-name: test-rspec
+name: rubocop
 on:
   pull_request:
   pull_request_review:
@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  rspec:
+  rubocop:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -18,17 +18,8 @@ jobs:
       with:
         ruby-version: 2.7.4
         bundler-cache: true
-    - name: Install dependencies and run RSpec
-      env:
-        RAILS_ENV: test
-        SECRET_KEY_BASE: "abcdef"
+    - name: Install dependencies and run rubocop
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
-        bundle exec rake db:create
-        bundle exec rake db:schema:load
-        bundle exec rspec
-    - uses: actions/upload-artifact@v2
-      with:
-        name: "Test Coverage"
-        path: coverage/
+        bundle exec rubocop
