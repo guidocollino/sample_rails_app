@@ -16,6 +16,10 @@ SimpleCov.start 'rails' do
      SimpleCov::Formatter::BadgeFormatter]
 end
 
+# SimpleCov.at_exit do
+#   IO.write('/tmp/result_tests_coverage', 'work-in-progress')
+# end
+
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 # Prevent database truncation if the environment is production

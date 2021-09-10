@@ -1,5 +1,7 @@
-![coverage](https://github.com/guidocollino/sample_rails_app/actions/workflows/rspec.yml/coverage.svg?event=push) | 
+![coverage](https://coveralls.io/repos/github/guidocollino/sample_rails_app/badge.svg?branch=master) | 
 [![rubocop](https://github.com/guidocollino/sample_rails_app/actions/workflows/rubocop.yml/badge.svg?event=push)](https://github.com/guidocollino/sample_rails_app/actions/workflows/rubocop.yml)
+
+
 
 # Ruby on Rails Tutorial sample application
 
