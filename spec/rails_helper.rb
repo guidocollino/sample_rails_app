@@ -3,9 +3,9 @@ require 'spec_helper'
 require 'support/factory_bot'
 require 'simplecov'
 require 'simplecov-lcov'
-require 'coveralls'
+# require 'coveralls'
 
-Coveralls.wear!('rails')
+# Coveralls.wear!('rails')
 
 SimpleCov::Formatter::LcovFormatter.config do |c|
   c.report_with_single_file = true
@@ -21,8 +21,7 @@ SimpleCov.start 'rails' do
   SimpleCov.formatter =
   SimpleCov::Formatter::MultiFormatter.new \
     [SimpleCov::Formatter::HTMLFormatter,
-    SimpleCov::Formatter::LcovFormatter,
-    Coveralls::SimpleCov::Formatter]
+    SimpleCov::Formatter::LcovFormatter]
 end
 
 # SimpleCov.at_exit do
