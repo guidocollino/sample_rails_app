@@ -23,11 +23,12 @@ group :development, :test do
   # gem 'debase'
   # gem 'ruby-debug-ide'
   gem 'byebug',             '11.1.3', platforms: %i[mri mingw x64_mingw]
+  gem 'coveralls', require: false
   gem 'rspec-rails',        '5.0.1'
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
   gem 'simplecov', '0.21.2'
-  gem 'simplecov-formatter-badge', require: false
+  gem 'simplecov-lcov', require: false
   gem 'sqlite3',            '1.4.2'
 end
 group :development do
